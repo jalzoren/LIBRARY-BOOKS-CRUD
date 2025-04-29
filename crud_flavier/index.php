@@ -42,6 +42,7 @@ if (isset($_GET['edit_id'])) {
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+      <link rel="icon" type="image/png" href="../crud_flavier/images/background.png">
   </head>
 
   <body>
