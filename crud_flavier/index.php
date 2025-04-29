@@ -11,12 +11,10 @@ $edit_book = [
     'status' => 'Available'
 ];
 
-// Check if we're in edit mode
 if (isset($_GET['edit_id'])) {
     $edit_mode = true;
     $edit_id = (int)$_GET['edit_id'];
 
-    // Get the book details from the database to prefill the form
     $stmt = $conn->prepare("SELECT * FROM books WHERE book_id = ?");
     $stmt->bind_param("i", $edit_id);
     $stmt->execute();
