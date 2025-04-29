@@ -1,5 +1,5 @@
 <?php
-include 'database.php'; // Make sure the path is correct
+include 'database.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['book_id'])) {
     $book_id = (int)$_POST['book_id'];
@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['book_id'])) {
         $stmt->bind_param("sssssi", $title, $author, $genre, $year_published, $status, $book_id);
 
         if ($stmt->execute()) {
-            header("Location: /CRUD_FLAVIER/crud_flavier/index.php"); // Correctly add a semicolon here
-            exit(); // Now properly separate with exit() after the header
+            header("Location: /CRUD_FLAVIER/crud_flavier/index.php"); 
+            exit(); 
         } else {
             echo "Update failed: " . $stmt->error;
         }

@@ -290,7 +290,7 @@ td label {
   border: #000000 solid 1px;
   font-size: 16px;
   font-style: normal;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); /* Prevents overlap */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); 
 }
 
 
